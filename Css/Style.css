@@ -1,0 +1,167 @@
+
+	body {
+		font-family: open sans;
+		margin: 0;
+		padding: 0;
+	}
+
+	/* lota is my favourite class all elements comes under this class */
+	#lota {
+		background: url('https://images.unsplash.com/photo-1601042879364-f3947d3f9c16?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+		background-size: 100%;
+		background-attachment: fixed;
+		margin: 0;
+		padding: 0;
+		animation: Chenge 3s infinite;
+		scroll-behavior: smooth;
+	}
+
+	#lota nav {
+		display: flex;
+		color: white;
+		text-shadow: 1px 1px 1px gray;
+		justify-content: space-between;
+		align-items: center;
+		font-weight: 600;
+		font-size: 24px;
+		padding: 15px 20px;
+		position: sticky;
+		top: 0px;
+		background: transparent;
+		backdrop-filter: blur(5px);
+		z-index: 292020;
+		border-bottom: .6px solid lightblue;
+	}
+
+	#lota nav .logo {
+		color: white;
+		text-decoration: none;
+		text-transform: capitalize;
+		padding: 0;
+		margin: 0;
+	}
+
+	#lota .hero {
+		display: flex;
+		justify-content: center;
+		margin: auto;
+		flex-direction: column;
+		text-align: center;
+		color: white;
+		background: transparent;
+		backdrop-filter: blur(3px);
+		border: .8px solid white;
+		border-radius: 15px;
+		width: 75%;
+		margin: 60px auto;
+		padding: 20px 10px;
+		text-transform: capitalize;
+		max-width: 600px;
+		min-width: 250px;
+		align-items: center;
+	}
+
+	#lota .hero:hover {
+		backdrop-filter: blur(10px);
+		transition: .4s;
+		transform: translateY(-15px);
+	}
+
+	#lota .hero img {
+		width: 40%;
+		border-radius: 50%;
+		border: 3px double gold;
+		padding: 3px;
+		margin: auto;
+	}
+
+	#lota .hero p a {
+		margin: 0px 10px;
+		color: white;
+		font-size: 140%;
+	}
+
+	#lota .hero p a:hover {
+		border: 1px solid white;
+		padding: 5px 7px;
+		border-radius: 50px;
+		background: linear-gradient(45deg, #e300ff, blue, cyan);
+		transition: .2s;
+	}
+
+	@media only screen and (min-width: 600px) {
+		#hm {
+			display: flex;
+			overflow-x: auto;
+			gap: 50px;
+		}
+
+		#lota .blog {
+			flex-wrap: wrap;
+		}
+	}
+
+	@media only screen and (max-width: 400px) {
+		#lota .blog {
+			flex-direction: column;
+		}
+	}
+
+	#lota .blog {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		gap: 20px;
+		width: 90%;
+		margin: 50px auto;
+		flex-wrap: wrap;
+		color: white;
+	}
+
+	#lota .blog img {
+		width: 100%;
+		box-shadow: 0px 1px 8px #40cbff8f;
+		border-radius: 5px;
+		aspect-ratio: 16/9;
+	}
+
+	#lota .blog .pst {
+		background: transparent;
+		backdrop-filter: blur(13px);
+		border: .8px solid #ccc;
+		padding: 8px;
+		border-radius: 12px;
+		text-align: center;
+		text-transform: capitalize;
+		max-width: 400px;
+	}
+
+	#lota .blog .pst h2 {
+		font-size: 22px;
+	}
+
+	#lota .blog .pst:hover {
+		backdrop-filter: blur(20px);
+		transition: .4s;
+		transform: translateY(-10px);
+	}
+
+	.heading {
+		color: white;
+		background: transparent;
+		backdrop-filter: blur(20px);
+		padding: 10px 20px;
+		margin: auto;
+		text-align: center;
+	}
+
+	@keyframes rotateHue {
+		0% {
+			filter: hue-rotate(0deg);
+		}
+
+		100% {
+			filter: hue-rotate(360deg);
+		}
+	}
+
